@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta  http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="webpage/bootstrap.min.css"/>
+    <script language="javascript" src="webpage/jquery.min.js"></script>
+	<script language="javascript" src="webpage/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="webpage/cssReset.css"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<title>Yuzhou Liu's Homepage</title>
+	<meta name="description" content="Yuzhou Liu's Homepage">
+	<meta name="keywords" content="Yuzhou Liu, SJTU">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167316452-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167316452-1');
+    </script>  
+    <style>
+        ul.no-bullets {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <style type='text/css'>
+        body{
+            font-family: Georgia, "Simsum";
+            font-size:15.5px;
+        }
+        /*
+            div.content:
+                provide the content div in the middle
+        */
+        body div.content{
+            /*width:1280px;*/
+            /* width:905px; */
+            width:60%;
+            margin:0 auto;
+            line-height:25px;
+            min-width: 700px;
+        }
+        /*
+            header wrapper
+        */
+        body div.header{
+            background-color:#2196F3;
+        }
+        body div.header > div.content{
+            padding:15px;
+        }
+        div.footer{
+            padding:32px 0px 28px 10px;
+            /* padding:40px, 100px, 10px, 0; */
+        }
+        /*
+            utils css
+        */
+        div.white-text{
+            color:white;
+        }
+        div.content > div.title{
+            padding:16px 0 26px 0;
+            /* border-top:1px silver solid; */
+            margin-top:0px;
+            font-size:1.4em;
+            font-weight:bold;
+            line-height:1px;
+        }
+        body a{
+            color:#08306b;
+            /* #004C99; */
+            text-decoration:none;
+        }
+        div.content ul{
+            list-style: square outside none;
+            padding-left:20px;
+        }
+        div.content ol{
+            list-style: square outside none;
+            padding-left:20px;
+        }
+        div.content li{
+            line-height:24px;
+            padding-bottom:2px;
+        }
+        div.content div.float-right{
+            float:right;
+        }
+    </style>
+
+    <style>
+        hr.new {
+        border-top: 1.3px silver solid;
+        /* padding-top:10px; */
+        }
+    </style>
+
+    </style>
+    <!-- publications -->
+    <style type="text/css">
+        div.publications > ol > li{
+            padding-bottom: 12px;
+        }
+    </style>
+
+    <!-- css for bio -->
+    <style type="text/css">
+        div.bio > div.left{
+            float:left;
+            width:250px;
+        }
+        div.bio > div.left > img.me{
+            height:240px;
+            margin:10px;
+      	    width:200px;
+            margin-top:10px;
+            margin-left:30px;
+        }
+
+        div.bio > div.right{
+            margin:30px 0 0 400px;
+            min-height:240px;
+            line-height:28px;
+        }
+        div.bio > div.right > div.line.name{
+            padding:10px 0;
+            line-height:20px;
+        }
+        div.bio > div.right > div.name > span.name, div.bio > div.right > div.name > span.chineseName{
+            font-size:1.7em;
+            font-weight:bold;
+        }
+    </style>	
+
+    <div class="content bio">
+        <div class="left">
+            <img class='me' src="./images.png"></img><br/>
+        </div>
+        <div class="right">
+            <div class="line name">
+                <span class="name">Yuzhou Liu</span>
+                <span class="chineseName">(刘昱州)</span>
+            </div>
+            <div class="affliation">
+                <p>Phd candidate</p>
+	        <p>Supervisor: <a href="http://vision.ia.ac.cn/Faculty/shshen/index.htm" target="_blank">Professor Shuhan Shen</a></p>
+                <p>National Laboratory of Pattern Recognition (NLPR), Institute of Automation (IA), Chinese Academy of Sciences (CAS)</p>
+                <p>Email: liuyuzhou2021 AT ia DOT ac DOT cn</p>
+            </div>  
+        </div>
+        <hr class="new">
+    </div>
+
+    <!-- quick link -->
+    <style type="text/css">
+        div.quickLink{
+            font-size:1.2em;
+            min-height:70px;
+        }
+        div.quickLink > .block{
+            display:block;
+            float:left;
+            padding:10px 0px;
+            text-align:center;
+            /* border:1px silver solid; */
+            /* border-radius:5px; */
+            /* box-shadow:2px 2px 1px silver; */
+            width:140px;
+            margin-right:30px;
+            margin-left:20px;
+            /* margin-top:20px; */
+            cursor:pointer;
+            border-top:1px silver solid;
+        }
+    </style>
+
+    <!-- <div class="content quickLink">
+        <a class="block" href="#biography">Biography</a>
+	<a class="block" href="#news">News</a>
+        <a class="block" href="#honors">Honors</a>
+        <a class="block" href="#publications">Publications</a>
+        <a class="block" href="#teaching">Talks</a>
+    </div>    -->
+    
+    <div class="Some thoughts" name='Skills'>
+        <a name="skills"></a>
+        <div class="title">Skills</div>
+        <ul>
+	          <li>Books read during my phd period (focusing on history books right now, hoping to learn something from the history, tring to understand the historical choices of different people under the background of the times, and enlighten personal life wisdom): 王奇生著《党员、党权与党争，1924-1949年中国国民党的组织型态》，黄治军著《晚清最后十八年》（1，2），渤海小吏著《三国争霸》（上，中，下），渤海小吏著《两晋悲歌》（上，中，下）</li>
+        </ul>
+        <hr class="new">
+    </div>
+    <div class="content Skills">
+      <table width="750" align="center" border="0" cellpadding="0">
+        <td width="35%" valign="middle"><p><a href="https://clustrmaps.com/site/1bsuu" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=pR8N8NtqtcIQxwcRYFzaer4tES0CV8_V8HIctezYCxw&cl=ffffff" width="240" height="123" style="border-style: none"></a></p>
+        <td width="65%" valign="bottom">
+          <p style="text-align:right;">Last update: 2024.02.14</p>
+        </td>
+        </td>
+      </table>
+    </div>
+   
+  
+ 
+</body>
+</html>
