@@ -139,6 +139,36 @@
 	    font-size: 1.7em;
 	    font-weight: bold;
 	}
+	@media (max-width: 768px) {
+	    div.content {
+	        width: 90%;
+	    }
+	
+	    div.bio {
+	        flex-direction: column;
+	        text-align: center;
+	    }
+	
+	    div.bio > div.left {
+	        max-width: 100%; /* 让图片自适应屏幕 */
+	    }
+	
+	    div.bio > div.left > img.me {
+	        width: 60%;
+	        max-width: 180px; /* 限制图片最大尺寸，避免超大 */
+	    }
+	
+	    div.bio > div.right {
+	        margin: 1em 0;
+	        padding: 1em;
+	        text-align: center;
+	    }
+	
+	    div.bio > div.right > div.name > span.name, 
+	    div.bio > div.right > div.name > span.chineseName {
+	        font-size: 1.5em;
+	    }
+	}
     </style>	
 
     <div class="content bio">
