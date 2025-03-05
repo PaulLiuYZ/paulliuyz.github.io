@@ -34,141 +34,113 @@
 
 <body>
     <style type='text/css'>
-	body{
-	    font-family: Georgia, "Simsum";
-	    font-size: 1rem; /* 1rem = 16px */
-	}
-	
-	/*
-	    div.content:
-	    provide the content div in the middle
-	*/
-	body div.content{
-	    width: 60%; /* 使用相对宽度 */
-	    max-width: 90vw;
-	    margin: 0 auto;
-	    line-height: 1.6em;
-	}
-	
-	/*
-	    header wrapper
-	*/
-	body div.header{
-	    background-color: #2196F3;
-	}
-	body div.header > div.content{
-	    padding: 1.2rem;
-	}
-	
-	div.footer{
-	    padding: 2rem 0 1.8rem 1rem; /* 统一使用 rem 代替 px */
-	}
-	
-	/*
-	    utils css
-	*/
-	div.white-text{
-	    color: white;
-	}
-	div.content > div.title{
-	    padding: 1rem 0 1.5rem 0;
-	    font-size: 1.4em;
-	    font-weight: bold;
-	    line-height: 1em;
-	}
-	body a{
-	    color: #08306b;
-	    text-decoration: none;
-	}
-	div.content ul, div.content ol{
-	    list-style: square outside none;
-	    padding-left: 5%;
-	}
-	div.content li{
-	    line-height: 1.5em;
-	    padding-bottom: 0.2em;
-	}
-	div.content div.float-right{
-	    float: right;
-	}
-	
-	hr.new {
-	    border-top: 0.08rem solid silver;
-	}
-	
-	/* publications */
-	div.publications > ol > li{
-	    padding-bottom: 0.75rem;
-	}
-	
-	/* css for bio */
-	div.bio {
-	    display: flex;
-	    flex-wrap: wrap;
-	    align-items: center;
-	    justify-content: center;
-	    padding: 2vw;
-	}
-	
-	div.bio > div.left{
-	    flex: 1;
-	    max-width: 40%;
-	    text-align: center;
-	}
-	
-	div.bio > div.left > img.me{
-	    width: 80%;
-	    max-width: 200px;
-	    height: auto;
-	    border-radius: 10px;
-	}
-	
-	div.bio > div.right{
-	    flex: 2;
-	    min-width: 250px;
-	    margin-left: 5%;
-	    line-height: 1.75em;
-	}
-	
-	div.bio > div.right > div.line.name{
-	    padding: 0.6em 0;
-	    line-height: 1.2em;
-	}
-	div.bio > div.right > div.name > span.name, 
-	div.bio > div.right > div.name > span.chineseName{
-	    font-size: 1.7em;
-	    font-weight: bold;
-	}
-	@media (max-width: 768px) {
-	    div.content {
-	        width: 90%;
-	    }
-	
-	    div.bio {
-	        flex-direction: column;
-	        text-align: center;
-	    }
-	
-	    div.bio > div.left {
-	        max-width: 100%; /* 让图片自适应屏幕 */
-	    }
-	
-	    div.bio > div.left > img.me {
-	        width: 60%;
-	        max-width: 180px; /* 限制图片最大尺寸，避免超大 */
-	    }
-	
-	    div.bio > div.right {
-	        margin: 1em 0;
-	        padding: 1em;
-	        text-align: center;
-	    }
-	
-	    div.bio > div.right > div.name > span.name, 
-	    div.bio > div.right > div.name > span.chineseName {
-	        font-size: 1.5em;
-	    }
-	}
+        body{
+            font-family: Georgia, "Simsum";
+            font-size:15.5px;
+        }
+        /*
+            div.content:
+                provide the content div in the middle
+        */
+        body div.content{
+            /*width:1280px;*/
+            /* width:905px; */
+            width:60%;
+            margin:0 auto;
+            line-height:25px;
+            min-width: 700px;
+        }
+        /*
+            header wrapper
+        */
+        body div.header{
+            background-color:#2196F3;
+        }
+        body div.header > div.content{
+            padding:15px;
+        }
+        div.footer{
+            padding:32px 0px 28px 10px;
+            /* padding:40px, 100px, 10px, 0; */
+        }
+        /*
+            utils css
+        */
+        div.white-text{
+            color:white;
+        }
+        div.content > div.title{
+            padding:16px 0 26px 0;
+            /* border-top:1px silver solid; */
+            margin-top:0px;
+            font-size:1.4em;
+            font-weight:bold;
+            line-height:1px;
+        }
+        body a{
+            color:#08306b;
+            /* #004C99; */
+            text-decoration:none;
+        }
+        div.content ul{
+            list-style: square outside none;
+            padding-left:20px;
+        }
+        div.content ol{
+            list-style: square outside none;
+            padding-left:20px;
+        }
+        div.content li{
+            line-height:24px;
+            padding-bottom:2px;
+        }
+        div.content div.float-right{
+            float:right;
+        }
+    </style>
+
+    <style>
+        hr.new {
+        border-top: 1.3px silver solid;
+        /* padding-top:10px; */
+        }
+    </style>
+
+    </style>
+    <!-- publications -->
+    <style type="text/css">
+        div.publications > ol > li{
+            padding-bottom: 12px;
+        }
+    </style>
+
+    <!-- css for bio -->
+    <style type="text/css">
+        div.bio > div.left{
+            float:left;
+            width:250px;
+        }
+        div.bio > div.left > img.me{
+            height:240px;
+            margin:10px;
+      	    width:200px;
+            margin-top:10px;
+            margin-left:30px;
+        }
+
+        div.bio > div.right{
+            margin:30px 0 0 400px;
+            min-height:240px;
+            line-height:28px;
+        }
+        div.bio > div.right > div.line.name{
+            padding:10px 0;
+            line-height:20px;
+        }
+        div.bio > div.right > div.name > span.name, div.bio > div.right > div.name > span.chineseName{
+            font-size:1.7em;
+            font-weight:bold;
+        }
     </style>	
 
     <div class="content bio">
