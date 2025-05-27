@@ -263,7 +263,7 @@ img.eq {
 	margin: 0px; padding: 0px 0.1em;
 }
 img.eqwl {
-	margin: 0px; padding-top: 0.6em; padding-bottom: 0.2em; padding-left: 2em;
+	margin: 0px; padding-top: 0.6em; padding-bottom: 0.2em; padding-left: 0.5em;
 }
 table + table {
 	margin-top: 1em;
